@@ -1,0 +1,347 @@
+body {
+/*    background-color: black;*/
+}
+
+
+h1 {
+	color: #fff;
+    font-family: 'Dancing Script', cursive;
+	font-weight: 300;
+	margin: 0;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	margin: 0;
+}
+
+section {
+	padding: 80px 0;
+}
+
+
+
+
+
+.welcome {
+	color: #fff;
+    background: rgba(40,14,36, 0.7);
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	top:70%;
+	width: 100%;
+    padding: 10px 0 10px 0;
+}
+@media (max-width: 991px) {
+    .welcome {
+	    top:70%;
+        width: 100%;
+        }
+}
+@media (max-width: 767px) {
+    .welcome span {
+    	width: 90px;
+    }
+
+    .welcome {
+    	top:70%;
+    	width: 100%;
+    }
+}
+   
+
+.welcome p {
+	font-size: 18px;
+	letter-spacing: 0.4em;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.welcome span {
+	border: 0;
+	border-top: 1px solid #fff;
+	display: inline-block;
+	margin: 6px 10px;
+	width: 150px;
+}
+
+.welcome i {
+	font-size: 18px;
+}
+
+.tint {
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 40;
+}
+
+
+
+
+
+
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+.wrapper {
+    height: 100%;
+    position: relative;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.header-container {
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+    background: black;
+    z-index: 100;
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(40,14,36);
+    /* RGBa with 0.9 opacity */
+    background: rgba(40,14,36, 0.7);
+}
+
+
+
+nav {
+    z-index: 1000;
+}
+
+nav ul {
+    font-family:"futura_ltbook",Arial,sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 2%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    white-space: nowrap;
+    outline: none;
+/*    font-size: 120%;*/
+    
+}
+
+nav li a:hover {
+    color: #fff;
+    background: white;
+    text-decoration: none;
+    outline: none;
+}
+nav li a.selected {
+    color: rgba(40,14,36, 1);;
+    background: white;
+    text-decoration: none;
+    outline: none;
+}
+
+/** firefox remove outline **/
+nav ul li a:focus {outline:none;}
+nav ul li a::-moz-focus-inner {border:0;}
+
+
+@media only screen and (min-width: 480px) {
+    
+    /** get the transparent bar on the bottom **/
+    .header-container {
+        position:absolute;
+        width:100%;
+        line-height:12px;
+    }
+
+    .header-container.sticky {
+        position: fixed;
+        animation:thedrop 1s 1;
+        -moz-animation:thedrop 1s 1;
+        -webkit-animation:thedrop 1s 1;
+    }
+    
+    
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        text-align: center;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a {
+/*        padding: 15px 1%;*/
+        margin-bottom: 0;
+        display:inline-block;
+        color:white;
+        white-space: nowrap;
+
+        -moz-font-smoothing: antialiased;
+        -o-font-smoothing: antialiased;
+        -ms-font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+
+    .main header {
+        margin-top: 10%;
+        float: left;
+        width: 40%;
+        min-width: 320px;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .main header {
+        margin-top: 10%;
+        margin-bottom: 30%;
+        float: left;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 15px 2%;
+    }
+}
+@media only screen and (min-width: 1140px) {
+/*    nav a {
+        padding: 15px 3%;
+        font-size: 120%;
+    }*/
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+    .main header {
+        margin-top: 4%;
+        margin-bottom: 30%;
+        float: left;
+        width: 100%;
+    }
+}
+
+
+
+
+footer {
+    font-size: 8px;
+}
+
+
+.mendez {
+    width: 370px;
+    height:370px;
+    display:block;
+    display: inline-block;
+    position: relative;
+    background:transparent url('../img/ajmendez.jpg') center top no-repeat;
+}
+.mason {
+    width: 370px;
+    height:370px;
+    display:block;
+    display: inline-block;
+    position: relative;
+    background:transparent url('../img/kkmason.jpg') center top no-repeat;
+}
+
+
+
+.heading {
+	padding-bottom: 60px;
+}
+
+.heading span {
+	border: 0;
+	border-top: 1px solid #562D98;
+	display: inline-block;
+	margin: 5px 10px;
+	width: 40px;
+}
+
+.heading i {
+	color: #562D98;
+}
+
+.social-icons {
+	list-style: none;
+	padding: 1em 0;
+}
+
+.social-icons li {
+	display: inline-block;
+	margin: 0 2px;
+}
+
+.social-icons a {
+	color: #562D98;
+	border: 1px solid #333;
+	border-radius: 50%;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	width: 30px;
+}
+
+.social-icons a:hover {
+	border: 1px solid #ff823e;
+	color: #ff823e;
+}
+
+
+#wedding {
+}
+
+#map-canvas {
+	height: 600px;
+	width: 100%;
+}
+#about {
+    background-color: #f5f4ec;
+}
+
+#registry {
+    background-color: #f5f4ec;
+}
