@@ -38,7 +38,7 @@ function initialize() {
           "stylers": [{ "lightness": -24 }],
          }
     ];
-    var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
+    var styledMap = new google.maps.StyledMapType(styles, {name: "Locations"});
     var mapOptions = {
         scrollwheel: false,
         zoom: 10,
