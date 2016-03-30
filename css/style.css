@@ -29,14 +29,14 @@ p {
 
 
 a {
-    background: rgb(40,14,36);
+    color: rgb(40,14,36);
     text-decoration: none;
     outline: none;
 }
 
 
 a:hover, nav a:visited {
-    color: #fff;
+    color: #ff823e;
     text-decoration: none;
     outline: none;
 }
