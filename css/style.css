@@ -28,6 +28,20 @@ p {
 }
 
 
+a {
+    background: rgb(40,14,36);
+    text-decoration: none;
+    outline: none;
+}
+
+
+a:hover, nav a:visited {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+
 .item {
 	text-align:center;
 }
@@ -160,6 +174,11 @@ p {
 
 
 
+
+
+
+
+
 nav {
     z-index: 1000;
 }
@@ -186,14 +205,14 @@ nav a {
     
 }
 
-nav li a:hover {
+nav a:hover, nav a:visited {
     color: #fff;
     background: white;
     text-decoration: none;
     outline: none;
 }
-nav li a.selected {
-    color: rgba(40,14,36, 1);;
+nav a.selected {
+    color: black;
     background: white;
     text-decoration: none;
     outline: none;
@@ -320,7 +339,7 @@ footer {
     display:block;
     display: inline-block;
     position: relative;
-    background:transparent url('../img/kkmason.jpg') center top no-repeat;
+    background:transparent url('../img/katiemason.jpg') center top no-repeat;
 }
 
 
